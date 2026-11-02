@@ -23,6 +23,8 @@ async function fetchTasks() {
 }
 
 function renderTasks(tasks) {
+  if (!taskList) return; // Guard against null target element
+
   taskList.innerHTML = '';
 
   if (tasks.length === 0) {
@@ -159,12 +161,16 @@ async function deleteTask(id) {
 }
 
 function showError(msg) {
-  errorBanner.textContent = msg;
-  errorBanner.hidden = false;
+  if (errorBanner) {
+    errorBanner.textContent = msg;
+    errorBanner.hidden = false;
+  }
 }
 
 function hideError() {
-  errorBanner.hidden = true;
+  if (errorBanner) {
+    errorBanner.hidden = true;
+  }
 }
 
 function escapeHtml(str) {
