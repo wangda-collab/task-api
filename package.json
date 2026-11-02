@@ -1,7 +1,7 @@
 {
   "name": "task-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "A robust, full-stack Task Management application built with **Node.js**, **Express**, **MVC Architecture**, and an **Aiven Cloud MySQL Database**, complete with a responsive vanilla JavaScript frontend.",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
@@ -20,5 +20,13 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangda-collab/task-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wangda-collab/task-api/issues"
+  },
+  "homepage": "https://github.com/wangda-collab/task-api#readme"
 }
